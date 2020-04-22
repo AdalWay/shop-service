@@ -1,0 +1,23 @@
+entity Shop {
+	name String,
+    phoneNumber String,
+}
+
+entity Location {
+	country String,
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+
+
+
+
+
+
+relationship OneToOne {
+	Shop{location} to Location
+}
+
